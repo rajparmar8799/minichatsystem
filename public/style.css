@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(239, 241, 240);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chatbox {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.messagebox {
+    background-color: #dcf8c6;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+    display: inline-block;
+    max-width: 60%;
+}
+
+.chatbox p {
+    margin: 5px 0;
+    font-size: 14px;
+}
