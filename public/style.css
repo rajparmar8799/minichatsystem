@@ -12,10 +12,12 @@ h1 {
 
 .chatbox {
     background: white;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    
 }
 
 .messagebox {
@@ -30,4 +32,187 @@ h1 {
 .chatbox p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+.newchatbtn {
+    margin: auto;
+    padding: 1;
+    background-color: darkgreen;
+    color: #dcf8c6;
+}
+
+.editbtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+
+    background-color: #f0f0f0;
+    color: #333;
+
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.editbtn:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ------------------ HOME PAGE ------------------ */
+
+.home-body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    font-family: Arial, sans-serif;
+}
+
+.home-container {
+    text-align: center;
+    background: white;
+    padding: 50px 60px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+}
+
+.home-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #2E7D32;
+}
+
+.home-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.primary-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #ddd;
+}
+
+/* ---------- FORM LAYOUT ---------- */
+
+.form-body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f5f7;
+    font-family: Arial, sans-serif;
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.form-info {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.styled-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.styled-form input,
+.styled-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.2s ease;
+    resize: none;
+}
+
+.styled-form input:focus,
+.styled-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+}
+
+.styled-form textarea {
+    min-height: 100px;
+}
+
+.primary-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
 }

@@ -8,8 +8,15 @@
 </head>
 <body>
     <h1> All chats ! </h1>
+    <form method = "get" action="/chats/new">
+        <button class="newchatbtn">Create New Chat</button>
+    </form>
     <% for(let chat of chats){ %>
     <div class="chatbox">
+        <form method="get" action="/chats/<%= chat._id %>/edit">
+            <button class="editbtn">Edit</button>
+        </form>
+        
         <p>From :<b><%= chat.from %></b> 
         </p>
         <div class="messagebox">
@@ -18,6 +25,12 @@
             </p>
         </div>
         <p> Received by :<b><%= chat.to %></b> 
+        </p>
+        <p>
+            <%= chat.created_at.toString().split(" ")[4] %>
+        </p>
+        <p>
+            <%= chat.created_at.toString().split(" ").slice(0,4).join(" ") %>
         </p>
     </div>
    <% } %> 
